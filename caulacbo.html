@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Club | Câu Lạc Bộ Sinh Viên Đột Phá</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-black text-indigo-700 tracking-tighter italic">X-CLUB</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link">Trang Chủ</a>
+                        <a href="#about" class="nav-link">Giới Thiệu</a>
+                        <a href="#events" class="nav-link">Sự Kiện</a>
+                        <a href="#members" class="nav-link">Thành Viên</a>
+                        <a href="#join" class="btn-primary">Đăng Ký</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link">Trang Chủ</a>
+                <a href="#about" class="mobile-nav-link">Giới Thiệu</a>
+                <a href="#events" class="mobile-nav-link">Sự Kiện</a>
+                <a href="#members" class="mobile-nav-link">Thành Viên</a>
+                <a href="#join" class="mobile-nav-link text-indigo-700 font-bold">Đăng Ký Ngay</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section pt-32 pb-24 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="badge italic">Trải nghiệm khác biệt cùng X-Club</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">Khai Phóng Tiềm Năng <br>Vươn Tới Đỉnh Cao</h1>
+            <p class="text-xl mb-10 text-indigo-100 max-w-2xl mx-auto leading-relaxed">
+                X-Club là không gian dành cho những sinh viên không ngại bứt phá giới hạn, nơi mọi ý tưởng "điên rồ" đều được ủng hộ và hiện thực hóa.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#join" class="btn-hero-white">Gia Nhập X-Club</a>
+                <a href="#events" class="btn-hero-outline">Khám Phá Hoạt Động</a>
+            </div>
+        </div>
+        <div class="shape-top"></div>
+        <div class="shape-bottom"></div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="stat-item">
+                <p class="stat-number">1000+</p>
+                <p class="stat-label">X-Members</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">15</p>
+                <p class="stat-label">Dự án X-Labs</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">200+</p>
+                <p class="stat-label">Sự kiện thành công</p>
+            </div>
+            <div class="stat-item">
+                <p class="stat-number">07</p>
+                <p class="stat-label">Năm đồng hành</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1 grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1523240715632-d984bc4dd953?auto=format&fit=crop&q=80&w=400" alt="Nhóm sinh viên" class="rounded-2xl shadow-lg mt-8 scroll-anim">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=400" alt="Hoạt động" class="rounded-2xl shadow-lg scroll-anim">
+                </div>
+                <div class="order-1 md:order-2 scroll-anim">
+                    <h2 class="text-4xl font-bold mb-6 text-gray-900">Tại sao chọn <span class="text-indigo-700">X-Club?</span></h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        Chúng tôi không chỉ tổ chức sự kiện, chúng tôi tạo ra những trải nghiệm thay đổi tư duy. Tại X-Club, bạn sẽ được thử thách trong các môi trường năng động nhất.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="feature-card">
+                            <i class="fas fa-rocket text-indigo-700 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Ban Dự Án (X-Project)</h4>
+                                <p class="text-sm text-gray-500">Trực tiếp triển khai các dự án quy mô lớn.</p>
+                            </div>
+                        </div>
+                        <div class="feature-card">
+                            <i class="fas fa-palette text-indigo-700 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Ban Sáng Tạo (X-Creative)</h4>
+                                <p class="text-sm text-gray-500">Phụ trách hình ảnh và truyền thông.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div class="text-left scroll-anim">
+                    <h2 class="text-4xl font-bold italic">X-Events Spotlight</h2>
+                    <p class="text-gray-500 mt-2">Dấu ấn văn hóa và trí tuệ.</p>
+                </div>
+                <a href="#" class="hidden md:block text-indigo-700 font-bold hover:text-indigo-900 scroll-anim">Tất cả sự kiện <i class="fas fa-chevron-right ml-2 text-sm"></i></a>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Event Card 1 -->
+                <div class="event-card scroll-anim">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600" alt="X-Talk" class="w-full h-56 object-cover">
+                        <span class="event-tag bg-indigo-700">X-Talk</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="event-meta">
+                            <i class="far fa-calendar-alt mr-2"></i> Thứ Bảy tới
+                        </div>
+                        <h3 class="event-title italic">X-Talk: Dám Thất Bại</h3>
+                        <p class="text-gray-600 text-sm mb-6">Lắng nghe câu chuyện từ chuyên gia.</p>
+                        <button class="btn-event-action">Giữ chỗ</button>
+                    </div>
+                </div>
+                <!-- More cards can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section id="join" class="py-24 bg-gray-900 relative">
+        <div class="max-w-4xl mx-auto px-4 relative z-10 scroll-anim">
+            <div class="bg-white p-8 md:p-16 rounded-[2rem] shadow-2xl border-t-8 border-indigo-700">
+                <h2 class="text-center text-4xl font-extrabold italic mb-12">Gia Nhập Đế Chế X</h2>
+                <form id="registrationForm" class="space-y-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <input type="text" placeholder="Tên Thành Viên Mới" required class="form-input">
+                        <input type="text" placeholder="ID Sinh Viên" required class="form-input">
+                    </div>
+                    <button type="submit" class="btn-submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <span class="text-4xl font-black text-indigo-500 italic">X-CLUB</span>
+            <p class="text-gray-500 mt-8">&copy; X-CLUB STUDENT EMPIRE. REINVENTING REALITY.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <i class="fas fa-check-circle mr-2"></i>
+        <span>Đã gửi đơn thành công!</span>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

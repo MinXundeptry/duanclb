@@ -1,0 +1,208 @@
+/* --- Fonts & Base --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* --- Utilities --- */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 100%);
+}
+
+.shape-top {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    width: 20rem;
+    height: 20rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 9999px;
+    filter: blur(64px);
+}
+
+.shape-bottom {
+    position: absolute;
+    bottom: -5rem;
+    left: -5rem;
+    width: 20rem;
+    height: 20rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 9999px;
+    filter: blur(64px);
+}
+
+/* --- Components --- */
+.nav-link {
+    padding: 0.5rem 0.75rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #4f46e5;
+}
+
+.btn-primary {
+    background-color: #4338ca;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #3730a3;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav-link {
+    display: block;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.mobile-nav-link:hover {
+    background-color: #f9fafb;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.875rem;
+}
+
+.btn-hero-white {
+    background-color: white;
+    color: #1e1b4b;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    transition: all 0.3s ease;
+}
+.btn-hero-white:hover {
+    background-color: #f5f3ff;
+    transform: scale(1.05);
+}
+
+.btn-hero-outline {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.stat-number {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: #3730a3;
+}
+.stat-label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+.feature-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    background: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    border-left: 4px solid #4338ca;
+}
+
+.event-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid #f3f4f6;
+    transition: transform 0.3s ease;
+}
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+}
+
+.event-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border-radius: 0.75rem;
+    border: 2px solid #f3f4f6;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.form-input:focus {
+    border-color: #4338ca;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #4338ca;
+    color: white;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.toast {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    background-color: #4338ca;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    z-index: 60;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* --- Animations --- */
+.scroll-anim {
+    transition: all 1s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.scroll-anim.active {
+    opacity: 1;
+    transform: translateY(0);
+}
